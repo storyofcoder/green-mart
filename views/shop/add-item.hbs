@@ -1,0 +1,99 @@
+
+<script>
+    var stateObject = {
+        "Fruits": {
+            "Apple": [],
+            "Mango": [],
+            "Banana": [],
+            "etc":[]
+        },
+        "Vegetables": {
+            "Patato": [],
+            "Green": [],
+            "Ginger":[],
+            "etc":[]
+        }
+    }
+    window.onload = function () {
+        var countySel = document.getElementById("countySel"),
+                stateSel = document.getElementById("stateSel");
+        for (var country in stateObject) {
+            countySel.options[countySel.options.length] = new Option(country, country);
+        }
+        countySel.onchange = function () {
+            stateSel.length = 1; // remove all options bar first
+            districtSel.length = 1; // remove all options bar first
+            if (this.selectedIndex < 1) return; // done
+            for (var state in stateObject[this.value]) {
+                stateSel.options[stateSel.options.length] = new Option(state, state);
+            }
+        };
+        countySel.onchange(); // reset in case page is reloaded
+
+    }
+</script>
+</head>
+
+<body>
+<div style="margin-left: 7vw">
+    <h1>Hello Add item here</h1>
+
+    <form  action="/add-item" method="post">
+
+        <input type="text" class="form-control mb-2" name="image" placeholder="Image Path" value="xyz.jpg">
+
+        Select Add-Item :
+        <select name="item" id="countySel"  size="1">
+            <option value="" selected="selected">Select Here</option>
+        </select>
+        <br>
+        <br>
+        Item Name: <select name="title" id="stateSel" size="1">
+        <option value="" selected="selected">Select Here</option>
+    </select>
+
+        <select name="district" id="districtSel" size="1" style="display: none">
+            <option value="" selected="selected">Please select State first</option>
+        </select><br>
+        <br>
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label >Enter Buy Rate</label>
+            </div>
+            <div class="col-auto">
+                <input type="number" class="form-control mb-2"  name="buyprice" placeholder="Buy Price" min="0">
+            </div>
+            /
+            <div class="col-auto">
+                <select class="custom-select mr-sm-2">
+                    <option selected>Choose...</option>
+                    <option value="1">100 gm.</option>
+                    <option value="2">500 gm.</option>
+                    <option value="3">1 Kg</option>
+                    <option value="3">5 Kg</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label >Enter Sell Rate</label>
+            </div>
+            <div class="col-auto">
+                <input type="number" class="form-control mb-2"  name="sellprice" placeholder="Sell Price" min="0">
+            </div>
+            /
+            <div class="col-auto">
+                <select class="custom-select mr-sm-2" name="weight">
+                    <option selected>Choose...</option>
+                    <option value="100 gm">100 gm.</option>
+                    <option value="500 gm">500 gm.</option>
+                    <option value="1 Kg">1 Kg</option>
+                    <option value="5 Kg">5 Kg</option>
+                </select>
+            </div>
+
+        </div>
+        <input type="submit">
+    </form>
+</div>

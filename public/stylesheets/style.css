@@ -1,0 +1,91 @@
+body{
+    overflow-x: hidden;
+}
+.main-signin-block{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    max-width: 350px;
+}
+select{
+    max-width: 350px;
+    max-height: 60px;
+}
+.signin-img{
+    width: 50vw;
+    margin-left: 50px;
+}
+.main-signin{
+    width: 600px;
+}
+
+.fweight500{
+    font-weight: 500;
+}
+
+.font22{
+    font-size: 22px;
+}
+
+.navbar{
+    background-color: #4CBB17;
+    margin-bottom: 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.search-input{
+    width: 25vw;
+    margin-left: 25vw;
+    color: red;
+}
+
+.search-input::placeholder, .search-input:focus{
+    color: #4CBB17;
+}
+
+.fa-search{
+    font-size: 24px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#filter-count{
+    font-weight: 500 ;
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+.nav-item{
+    color: whitesmoke;
+}
+
+.nav-item .nav-link{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.dropdown-menu{
+    position: relative;
+    left: -22px;
+    top: 50px;
+}
+
+.bucket{
+    border: 2px solid #4CBB17;
+    border-radius: 4px;
+    color: #4CBB17;
+    position: relative;
+    top: -5px;
+    left: 10px;
+    cursor: pointer;
+    padding: 5px 7px;
+}
+
+.bucket:hover{
+    background-color: #4CBB17;
+    color: whitesmoke;
+}
+
