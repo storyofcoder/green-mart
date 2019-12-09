@@ -1,11 +1,27 @@
+# 
+
+
+
+## Working on node.js, Express, Mongodb etc... 
+
+install 
+   `-node.js` 
+  `-mongodb`
+
+## run command on IDE terminal
+  `-npm install`
+  `-npm start` 
+
+then start on : http://localhost:3000
+
+
+
+
+
 # Green-Mart
+> Online Grocery Shopping: Choose from a wide range of groceries, baby care products, personal care products, fresh fruits and vegetables online with guaranteed lowest prices amongst all supermarkets. <br> Live at: http://green-mart.herokuapp.com
 
-http://green-mart.herokuapp.com
-
-### Green-Mart is an online supermarket for all your daily needs. Online shopping now made easy with a wide range of variety
-
-<br>
-
+## Screenshots
 `` Signin ``
 ![Home Page](https://raw.githubusercontent.com/storyofcoder/green-mart/master/login.jpg)
 
@@ -25,17 +41,26 @@ http://green-mart.herokuapp.com
 `` Items ``
 ![Order](https://raw.githubusercontent.com/storyofcoder/green-mart/master/greenmart2.jpg)
 
-## To start 
-- save my repository
+## Technologies
+* Node.js
+* Mongodb
+* HTML, CSS etc.
 
-## Working on node.js, Express, Mongodb etc... 
+## Setup
+You can download my repo the run command: npm i -> to install dependencies and run command nodemon -> to start node server.
 
-install 
-   `-node.js` 
-  `-mongodb`
+## Features
+List of features ready and TODOs for future development
+* The project is well planned and designed. 
+* The main feature is UI and logical part.
 
-## run command on IDE terminal
-  `-npm install`
-  `-npm start` 
 
-then start on : http://localhost:3000
+## Status
+Project is: Completed.
+
+## Inspiration
+To create something exciting
+
+## Contact
+```- Software Engineer: Munny Kumar  ```
+
