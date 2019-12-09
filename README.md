@@ -1,23 +1,3 @@
-# 
-
-
-
-## Working on node.js, Express, Mongodb etc... 
-
-install 
-   `-node.js` 
-  `-mongodb`
-
-## run command on IDE terminal
-  `-npm install`
-  `-npm start` 
-
-then start on : http://localhost:3000
-
-
-
-
-
 # Green-Mart
 > Online Grocery Shopping: Choose from a wide range of groceries, baby care products, personal care products, fresh fruits and vegetables online with guaranteed lowest prices amongst all supermarkets. <br> Live at: http://green-mart.herokuapp.com
 
