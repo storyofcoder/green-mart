@@ -30,7 +30,7 @@
 You can download my repo the run command: npm i -> to install dependencies and run command nodemon -> to start node server.
 
 ## Features
-List of features ready and TODOs for future development
+
 * The project is well planned and designed. 
 * The main feature is UI and logical part.
 
